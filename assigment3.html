@@ -1,38 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>assigment3</title>
+  <title>Assignment 3 - Rose Photo Album</title>
   <style>
-    .album{
-      display:flex;
-      flex-direction:column;
-      align-items: center;
-   
-
-      
+    body {
+      font-family: Arial, sans-serif;
     }
-    .h2{
-      align-content: center;
+    .album {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .row {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .card img {
+      width: 300px;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+    .card:hover img {
+      transform: scale(1.1); 
+    }
+    .card:hover {
+      transform: scale(1.05); 
     }
   </style>
 </head>
-<body >
-  <h2 class="h2"> rose photo album</h2>
-  <div class="album" >
-    <div> <img src="1.jpg" width="300">
-      <img src="2.jpg  " width="300">
-      <img src="3.jpg" width="300">
-  
+<body>
+  <h2>Rose Photo Album</h2>
+  <div class="album">
+    <div class="row">
+      <div class="card">
+        <img src="1.jpg" alt="Rose 1">
+      </div>
+      <div class="card">
+        <img src="2.jpg" alt="Rose 2">
+      </div>
+      <div class="card">
+        <img src="3.jpg" alt="Rose 3">
+      </div>
     </div>
-    <div>
-      <img src="4.jpg" width="300">
-      <img src="5.jpg" width="300">
-      <img src="6.jpg" width="300">>
+    <div class="row">
+      <div class="card">
+        <img src="4.jpg" alt="Rose 4">
+      </div>
+      <div class="card">
+        <img src="5.jpg" alt="Rose 5">
+      </div>
+      <div class="card">
+        <img src="6.jpg" alt="Rose 6">
+      </div>
     </div>
-   
   </div>
-  
-  
-  
 </body>
 </html>
